@@ -1,0 +1,13 @@
+Nkg = int(input())
+Npack = 0
+
+while True:
+    if Nkg % 5 == 0:
+        print(Nkg // 5 + Npack)
+        break
+    else :
+        Nkg -= 3
+        Npack += 1
+        if Nkg < 0:
+            print(-1)
+            break
